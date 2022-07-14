@@ -16,15 +16,12 @@
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/spes/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
+    vendor/xiaomi/spes/configs/permissions/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml \
+    vendor/xiaomi/spes/configs/permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
     vendor/xiaomi/spes/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/configs/ANXCamera/anx.js:$(TARGET_COPY_OUT_SYSTEM)/etc/ANXCamera/anx.js
-
-# Sysconfig
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/spes/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
 PRODUCT_PRODUCT_PROPERTIES += \
