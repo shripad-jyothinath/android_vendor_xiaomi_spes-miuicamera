@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/venus-miuicamera/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/spes-miuicamera/sepolicy/vendor
 
-include vendor/xiaomi/venus-miuicamera/common/BoardConfigVendor.mk
+include vendor/xiaomi/spes-miuicamera/common/BoardConfigVendor.mk
