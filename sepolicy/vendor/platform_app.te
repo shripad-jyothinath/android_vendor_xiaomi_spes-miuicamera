@@ -1,13 +1,3 @@
-allow platform_app {
-    DisplayFeatureControl
-    miui_multi_display
-    perfshielder
-    ProcessManager
-}:service_manager find;
-
-allow platform_app {
-    hal_camerapostproc_xiaomi_hwservice
-    hal_misys_hwservice
-}:hwservice_manager find;
-
-allow platform_app app_data_file:file execute;
+allow platform_app sysfs_msm_subsys:dir search;
+allow platform_app sysfs_msm_subsys:file r_file_perms;
+allow platform_app zygote:unix_stream_socket { getopt };
