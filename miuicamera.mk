@@ -32,4 +32,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera
 
-$(call inherit-product, vendor/xiaomi/spes/common/common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/spes-miuicamera/common/common-vendor.mk)
