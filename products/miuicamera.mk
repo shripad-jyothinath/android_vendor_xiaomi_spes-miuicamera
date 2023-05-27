@@ -6,12 +6,12 @@
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sweet-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
-    vendor/xiaomi/sweet-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
+    vendor/xiaomi/spes-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
+    vendor/xiaomi/spes-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sweet-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
+    vendor/xiaomi/spes-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -22,4 +22,4 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera \
     vendor.camera.aux.packagelist=com.android.camera
 
-$(call inherit-product, vendor/xiaomi/sweet-miuicamera/common/common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/spes-miuicamera/common/common-vendor.mk)
